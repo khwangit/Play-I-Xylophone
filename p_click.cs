@@ -24,12 +24,12 @@ public class p_click : MonoBehaviour {
 			}
 		}
 
-		if(this.gameObject.GetComponent<SpriteRenderer>().sprite == s_down || bar.transform.position.x >= 7.5f ){
+		if(this.gameObject.GetComponent<SpriteRenderer>().sprite == s_down || bar.transform.position.x >= 8f ){
 			delay -= Time.deltaTime;
 			if (delay <= 0) {
 				this.gameObject.GetComponent<SpriteRenderer>().sprite = up;
 				bar.SetActive (false);
-				bar.transform.position = new Vector2 (-7.5f, 1.25f);
+				bar.transform.position = new Vector2 (-8f, 1.25f);
 				delay = 0.1f;
 			}
 		}
